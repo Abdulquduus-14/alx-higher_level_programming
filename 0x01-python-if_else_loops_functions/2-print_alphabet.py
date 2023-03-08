@@ -4,5 +4,5 @@ n = 97
 for i in range(26):
     n = n + i
     s = chr(n)
-    print("{}".format(s))
+    print("{}".format(s), end="")
     n = n + 1
