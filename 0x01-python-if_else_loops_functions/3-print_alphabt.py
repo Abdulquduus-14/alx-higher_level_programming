@@ -7,4 +7,3 @@ for i in range(26):
     continue
     s = chr(n)
     print("{}".format(s), end="")
-    n = n + 1
