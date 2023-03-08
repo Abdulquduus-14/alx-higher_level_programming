@@ -6,6 +6,6 @@ print("Last digit of", number, "is", n, end=" ")
 if n > 5:
     print("and is greater than 5")
 if n == 0:
-    print("and is zero")
+    print("and is 0")
 if n < 6 and n != 0:
     print("and is less than 6 and not 0")
