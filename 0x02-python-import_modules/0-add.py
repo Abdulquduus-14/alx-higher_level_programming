@@ -1,22 +1,15 @@
 #!/usr/bin/python3
 
-from add_0 import add
-
-
-def main():
+if _name_ == "_ main_":
+    from add_0 impport add
     """My main function
 
     Args:
         a: first integer
-        b: second integer
-
-    Returns:
-        0 for success
+        b: second integr
     """
 
 
 a = 1
 b = 2
-print("{} + {} = {}".format(a, b, add(a, b)))
-
-main()
+print("{0} + {1} = {2}".format(a, b, add(a, b)))
