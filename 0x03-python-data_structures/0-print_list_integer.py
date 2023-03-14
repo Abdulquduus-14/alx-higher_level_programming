@@ -3,7 +3,8 @@
 """Function that prints all integers of a list.
 Args:
     my_list: list of integers
-return: 0 for success
+    Return:
+    nothing
 """
 
 
