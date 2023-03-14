@@ -12,7 +12,7 @@ def replace_in_list(my_list, idx, element):
     i = 0
 
     for i in my_list:
-        i += i
+        continue
     while i >= 0:
         if i == idx:
             my_list[idx] = element
