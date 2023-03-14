@@ -6,10 +6,11 @@ def no_c(my_string):
     my_string: array of characters
     return: nothing
     """
+    s = ""
 
     for ch in my_string:
         if ch == 'c' or ch == 'C':
-            ch = ''
+            ch = " "
         s += ch
 
     return s
