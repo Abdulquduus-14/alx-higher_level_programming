@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-"""
-a function that prints all integers of a list.
+"""Function that prints all integers of a list.
 Args:
     my_list: list of integers
 return: 0 for success
