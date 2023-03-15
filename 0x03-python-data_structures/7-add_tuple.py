@@ -8,8 +8,11 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     Return: new tuple
     """
+    n = []
     if len(tuple_a) > 2 or len(tuple_b) > 2:
         tuple_a = tuple_a[0:2]
         tuple_b = tuple_b[0:2]
-    n = (x + y for (x, y) in zip(tuple_a, tuple_b))
-    return n
+    for i in range(2):
+        for(x, y) in zip(list(tuple_a), list(tuple_b)):
+            n[i] = x + y
+    return tuple(n)
