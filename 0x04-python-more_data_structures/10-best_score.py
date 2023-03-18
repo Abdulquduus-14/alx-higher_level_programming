@@ -9,10 +9,10 @@ def best_score(a_dictionary):
     Returns:
     the biggest integer value.
     """
-    max = a_dictionary.values()
 
+    for v in a_dictionary.values():
+        max = v
     for v in a_dictionary.values():
         if v > max:
             max = v
-
     return max
