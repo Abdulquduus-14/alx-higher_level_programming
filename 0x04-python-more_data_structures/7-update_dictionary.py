@@ -11,11 +11,8 @@ def update_dictionary(a_dictionary, key, value):
 
     Returns: new dictionay
     """
-    d = {}
-    if key in a_dictionary:
-        a_dictionary[key] = value
-    else:
-        a_dictionary[key] = value
-
-    d = a_dictionary
-    return d
+    for k in a_dictionary.keys():
+        if k == key:
+            a_dictionary[key] = value
+    a_dictionary[key] = value
+    return a_dictionary

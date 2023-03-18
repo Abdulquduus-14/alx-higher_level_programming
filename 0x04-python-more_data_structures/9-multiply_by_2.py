@@ -9,7 +9,6 @@ def multiply_by_2(a_dictionary):
 
     returns: new dictionary
     """
-    for v in a_dictionary.values():
-        v *= 2
-
+    for k, v in a_dictionary.items():
+        a_dictionary[k] = v * 2
     return a_dictionary

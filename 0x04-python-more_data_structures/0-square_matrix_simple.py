@@ -7,9 +7,8 @@ def square_matrix_simple(matrix=[]):
     matrix: 2 dimensional array
     Returns: a new matrix of integers
     """
-    m = [][]
-    for i in range(3):
-        for j in range(3):
-            m[i][j] = matrix[i][j] ** 2
-
-    return m
+    for [x, y, z] in matrix:
+        x *= x
+        y *= y
+        z *= z
+    return matrix

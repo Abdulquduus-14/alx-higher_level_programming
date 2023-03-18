@@ -13,7 +13,9 @@ def simple_delete(a_dictionary, key=""):
     new dictionary structure
     """
     d = {}
-    if key in a_dictionary:
-        del a_dictionary[key]
+
+    for k in a_dictionary.keys():
+        if k == key:
+            del a_dictionary[key]
     d = a_dictionary
     return d

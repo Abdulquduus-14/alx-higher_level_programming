@@ -10,7 +10,7 @@ def print_sorted_dictionary(a_dictionary):
     Returns:
     """
     d = {}
-    d = sorted(a_dictionary)
+    d = a_dictionary.sort()
 
     for k, v in d.items():
         print("{}: {}".format(k, v))
