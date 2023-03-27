@@ -12,9 +12,9 @@ def safe_print_list(my_list=[], x=0):
 
     try:
         for i in range(x):
-            print("{}".format(my_list[i]), end="")
+            print("{:d}".int(format(my_list[i])), end="")
             c += 1
-    except ValueError:
-        print()
+    except (ValueError, TypeError, NameError):
+        pass
 
     return c
