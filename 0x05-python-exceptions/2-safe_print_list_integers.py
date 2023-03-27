@@ -11,14 +11,9 @@ def safe_print_list_integers(my_list=[], x=0):
     c = 0
     try:
         for i in range(x):
-            if type(my_list[i]) != type(i):
-                break
             print("{:d}".format(my_list[i]))
             c += 1
-        return c
-        except (ValueError, TypeError):
-            print()
-        except IndexError:
+        except (IndexError, ValueError, TypeError):
             print()
         except Exception:
             print()
