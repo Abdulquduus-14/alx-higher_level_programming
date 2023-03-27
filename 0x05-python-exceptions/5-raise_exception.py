@@ -5,4 +5,4 @@ def raise_exception():
 
     Returns: none
     """
-    raise Exception
+    raise TypeError()
