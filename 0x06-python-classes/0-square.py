@@ -11,5 +11,7 @@ class Square:
 
         Args:
         no arguments
+
+        Returns:
+        nothing
         """
-        pass
