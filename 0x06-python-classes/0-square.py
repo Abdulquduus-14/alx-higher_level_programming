@@ -3,9 +3,13 @@
 class Square:
     """ an empty class Square that defines a square
 
-    Args:
+    Attributes:
     No attributes defined
-
-    Returns: nothing
     """
-    pass
+    def __init__(self):
+        """ initializes an instance of the class with no parameter
+
+        Args:
+        no arguments
+        """
+        pass
