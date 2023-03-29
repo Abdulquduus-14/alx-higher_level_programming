@@ -7,7 +7,7 @@ class Square:
     Attributes
     siz(int): private instance attributes defin
     """
-    def __init__(self, size):
+    def __init__(self, size=0):
         """ initializes object attributs
 
         Args:
@@ -16,4 +16,11 @@ class Square:
         Returns:
         nothing
         """
-        self.size = size
+        if size < 0:
+            raise ValueError("size must be an integer")
+        try:
+            self.size = size
+        except TypeError:
+            print("size must be an integer")
+        except ValueError:
+            print("size must be >= 0")
