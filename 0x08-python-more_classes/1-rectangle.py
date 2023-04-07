@@ -10,6 +10,7 @@ class Rectangle:
     height (int): tallness of rectangle
     """
 
+    @width.setter
     def width(self, value):
         """ object constructor method to initialise
         the attribute
@@ -17,13 +18,14 @@ class Rectangle:
         Args:
         value (int): wideness of the rect
         """
-        if type(value) is not Int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if width < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
 
-        self.width = value
+        self.__width = value
 
+    @property
     def width(self):
         """ object constructor method to initialise
         the attribute
@@ -32,8 +34,9 @@ class Rectangle:
         None
         Returns: width of rectangle
         """
-        return (self.width)
+        return self.__width
 
+    @height.setter
     def height(self, value):
         """ object constructor method to initialise
         the attribute
@@ -41,13 +44,14 @@ class Rectangle:
         Args:
         value (int): wideness of the rect
         """
-        if type(value) is not Int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
 
-        self.height = value
+        self.__height = value
 
+    @property
     def height(self):
         """ object constructor method to initialise
         the attribute
@@ -56,4 +60,4 @@ class Rectangle:
         None
         Returns: height of rectangle
         """
-        return (self.height)
+        return self.__height
