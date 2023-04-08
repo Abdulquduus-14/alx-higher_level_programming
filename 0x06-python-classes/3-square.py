@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+""" an class Square that defines a square with size"""
+
 
 class Square:
     """ an class Square that defines a square.
     Instantiation with size attribute is done
 
     Attributes
-    siz(int): private instance attributes defin
+    size (int): private instance attributes defin
     """
     def __init__(self, size=0):
         """ initializes object attributs
@@ -16,22 +18,17 @@ class Square:
         Returns:
         nothing
         """
+        if not(isinstance(size, int)):
+            raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError("size must be an integer")
-        try:
-            self.size = size
-        except TypeError:
-            print("size must be an integer")
-        except ValueError:
-            print("size must be >= 0")
+            raise ValueError("size must be >= 0")
+        self.__size = size
 
     def area(self):
-        """ find the area of the square
+        """ return the area
 
-        Args:
-        area (int): product of size by size
+        Args: none
 
-        Returns:
-        returns the current square area
+        Returns: area of square
         """
-        return (self.size * self.size)
+        return (self.__size * self.__size)
