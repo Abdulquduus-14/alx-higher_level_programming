@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" an empty class Square that defines a square """
+
 
 class Square:
     """ an empty class Square that defines a square
@@ -6,12 +8,4 @@ class Square:
     Attributes:
     No attributes defined
     """
-    def __init__(self):
-        """ initializes an instance of the class with no parameter
-
-        Args:
-        no arguments
-
-        Returns:
-        nothing
-        """
+    pass
