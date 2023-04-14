@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""  a function that checks if the object is exactly an
+instance of the specified class or its derived class """
 
 
 def inherits_from(obj, a_class):
@@ -13,7 +15,4 @@ def inherits_from(obj, a_class):
     True if the object is exactly an instance of the specified class;
     otherwise False.
     """
-    if not(isinstance(obj, a_class)):
-        return False
-    else:
-        return True
+    isinstance(obj, a_class)

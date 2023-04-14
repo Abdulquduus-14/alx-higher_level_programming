@@ -27,3 +27,5 @@ class BaseGeometry:
         if value <= 0:
             msg = "{} must be greater than 0".format(self.value)
             raise ValueError(msg)
+        self.name = name
+        self.value = value
