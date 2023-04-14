@@ -23,6 +23,7 @@ class BaseGeometry:
         None
         """
         if not(isinstance(value, int)):
-            raise TypeError("{} must be an integer".format(self.__name))
+            raise TypeError("{} must be an integer".format(self.__value__))
         if value <= 0:
-            raise ValueError("{} must be greater than 0".format(self.__name))
+            msg = "{} must be greater than 0".format(self.__value__)
+            raise ValueError(msg)
