@@ -10,7 +10,6 @@ class Square:
     size (int): private instance attributes defin
     """
 
-    @size.setter
     def size(self, value):
         """ initializes object attributs
 
@@ -35,10 +34,9 @@ class Square:
         """
         return (self.__size * self.__size)
 
-    @property
     def size(self):
         """ getter function
         Args: nothing
         Returns: nothing
         """
-        return (self.size)
+        return (self.__size)
