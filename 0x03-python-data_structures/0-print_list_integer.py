@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-
-"""Function that prints all integers of a list.
-Args:
-    my_list: list of integers
-    Return:
-    nothing
-"""
-
-
 def print_list_integer(my_list=[]):
+    """ a function that prints all integers of a list.
 
-    for i in range(len(my_list)):
-        print("{:d}".format(my_list[i]))
+    Args:
+    my_list(int): list of integers
+
+    Returns: nothing
+    """
+    for i in my_list:
+        print("{:d}".format(i))
