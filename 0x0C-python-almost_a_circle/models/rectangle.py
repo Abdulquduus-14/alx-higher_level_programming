@@ -31,7 +31,7 @@ class Rectangle(Base):
         y(int): distance from y-coordinate
         Returns: nothing
         """
-        Base.__init__(self, id=None)
+        Base.__init__(self, id)
         self.width = width
         self.height = height
         self.x = x
